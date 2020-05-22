@@ -64,7 +64,7 @@ var (
 	VERSION   = "unknown"
 	BUILDTIME = "unknown time"
 	GITCOMMIT = "unknown git commit"
-	SITE      = "https://gitee.com/wenchangshou/vd-file-manage"
+	SITE      = "https://github.com/wenchangshou2/vd-file-manage"
 )
 
 func versionMessage() string {

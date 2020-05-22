@@ -1,6 +1,6 @@
 FROM golang:1.10
-WORKDIR /go/src/gitee.com/wenchangshou/vd-file-manage
-ADD . /go/src/gitee.com/wenchangshou/vd-file-manage/
+WORKDIR /go/src/github.com/wenchangshou2/vd-file-manage
+ADD . /go/src/github.com/wenchangshou2/vd-file-manage/
 RUN go get -v
 RUN CGO_ENABLED=0 GOOS=linux go build -ldflags '-X main.VERSION=docker' -o gohttpserver
 
@@ -10,7 +10,7 @@ RUN mkdir -p /app/public
 RUN apt-get update && apt-get install -y ca-certificates
 VOLUME /app/public
 ADD assets ./assets
-COPY --from=0 /go/src/gitee.com/wenchangshou/vd-file-manage/gohttpserver .
+COPY --from=0 /go/src/github.com/wenchangshou2/vd-file-manage/gohttpserver .
 EXPOSE 8000
 ENTRYPOINT [ "/app/gohttpserver", "--root=/app/public" ]
 CMD []

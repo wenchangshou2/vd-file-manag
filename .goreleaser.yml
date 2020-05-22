@@ -7,7 +7,7 @@ brew:
   github:
     owner: codeskyblue
     name: homebrew-tap
-  homepage: https://gitee.com/wenchangshou/vd-file-manage
+  homepage: https://github.com/wenchangshou2/vd-file-manage
 builds:
 - goos:
   - linux

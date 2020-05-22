@@ -11,4 +11,4 @@ this will produce this:
 | col 2 is      | *centered*    |   $12 |
 | zebra stripes | ~~are neat~~  |    $1 |
 
-https://gitee.com/wenchangshou/vd-file-manage
+https://github.com/wenchangshou2/vd-file-manage
