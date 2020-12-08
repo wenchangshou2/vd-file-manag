@@ -171,7 +171,8 @@ func (s *HTTPStaticServer) hDelete(w http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	err := os.Remove(filepath.Join(s.Root, path))
+	err := os.RemoveAll(filepath.Join(s.Root, path))
+	fmt.Println("delete remove",err)
 	if err != nil {
 		pathErr, ok := err.(*os.PathError)
 		if ok {
